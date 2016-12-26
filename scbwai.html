@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="author" content="Prakash Prasad">
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-27962903-1']);
+        _gaq.push(['_setDomainName', 'prakashprasad.com']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <link rel="Shortcut Icon" href="http://prakashprasad.com/images/favicon.ico" type="image/x-icon">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400|Open+Sans+Condensed:300,300italic&subset=latin,greek,greek-ext,latin-ext" rel="stylesheet" type="text/css">
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="menu_style.css">
+    <link rel="stylesheet" href="Libraries/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen">
+    <link type="text/css" rel="stylesheet" href="Libraries/syntaxhighlighter/styles/shCoreEclipse.css">
+
+    <title>SC: Brood War AI (C++) - prakashprasad.com</title>
+
+    <script type="text/javascript" src="Libraries/jquery-1.4.3.min.js"></script>
+    <script src="Libraries/fancybox/jquery.fancybox-1.3.4.js" type="text/javascript"></script>
+    <script type="text/javascript" src="Libraries/jwplayer/jwplayer.js"></script>
+    <script type="text/javascript" src="Libraries/syntaxhighlighter/scripts/shCore.js"></script>
+    <script type="text/javascript" src="Libraries/syntaxhighlighter/scripts/shBrushCpp.js"></script>
+    <script type="text/javascript">
+        SyntaxHighlighter.all();
+    </script>
+</head>
+
+<body class="port-body">
+
+    <a href="http://www.prakashprasad.com/blog" target="_blank">
+        <div class="port-blog" style="left:55px; top:-5px; "></div>
+    </a>
+
+    <a href="http://photo.prakashprasad.com" target="_blank">
+        <div class="port-photo" style="left:115px; top:-5px; "></div>
+    </a>
+
+    <div class="port-wrap">
+        <div class="port-header" onclick="location.href='index.html';" style="cursor:pointer; "></div>
+
+        <div class="nav-bar-container">
+            <ul id="navigation-1">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="resume.html" title="Résumé">Résumé</a></li>
+                <li><a href="projects.html" title="Projects" class="navigation-sel">Projects</a>
+                    <ul class="navigation-2">
+                        <li><a href="projects_as.html" title="Actionscript Projects">Actionscript</a></li>
+                        <li><a href="projects_cpp.html" title="C++ Projects" class="navigation-sel">C++</a></li>
+                        <li><a href="projects_cs.html" title="C# Projects">C#</a></li>
+                        <li><a href="projects_java.html" title="Java Projects">Java</a></li>
+                        <li><a href="projects_u3d.html" title="Unity 3D Projects">Unity 3D</a></li>
+                        <li><a href="projects_u.html" title="Unrealscript Projects">Unrealscript</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" title="Contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="port-block" style="left:0; top:-36px; ">
+
+            <h1>Starcraft : Brood War AI</h1>
+
+            <h2>Game Description</h2>
+            <div class="gamedescription">
+                <p>AI controller for a real-time strategy (RTS) game requires several AI techniques to work together at all times such as unit level controllers and overall strategy controllers. In application, RTS bots have a reputation for being extremely predictable and hence, human players find them very easy to beat. In this project, our group decided to create several different kinds of AI controllers for <em>Starcraft: Brood War</em> game. My role on the project was to evolve a unit controller (using Genetic Algorithm) that would be able to control any unit in the game (except controlling special spell-casting powers).</p>
+            </div>
+
+            <h2>Programming Challenges</h2>
+            <div class="programmingchallenge">
+                <p>Customized AI controller code (written using <em>BWAPI</em>) is injected into the game through an application called <em>Chaoslauncher</em>. This involved learning how the game represented different kind of data elements (attack speed, unit movement speed, armour, damage, etc.) as well as how to interface with the API. The biggest challenge however was the nature of tests to be carried out. The GA process depends on rating each chromosome, which meant that the game had to be run several thousand times to do a complete Neuro Evolution process, which highlight’s the need for efficient memory management.</p>
+            </div>
+
+            <h2>Features</h2>
+            <div class="features">
+                <ul>
+                    <li>BWAPI based unit manager</li>
+                    <li>CSV data reader/writer for recording samples and test data</li>
+                    <li>DLL compilation of Visual C++ code</li>
+                    <li>DLL injection into the game via Chaoslauncher</li>
+                </ul>
+            </div>
+
+            <h2>Video</h2>
+            <div class="videotrailer" style="width:720px; ">
+                <video src="images/sc-bw/video/GA.mp4" width="720" height="576" id="container" volume="100" autostart="false" poster="images/sc-bw/video/poster.png">
+                </video>
+
+                <script type="text/javascript">
+                    jwplayer("container").setup({
+                        flashplayer: "Libraries/jwplayer/player.swf"
+                    });
+                </script>
+            </div>
+
+            <h2>Screenshots</h2>
+            <div class="screenshots">
+
+                <a rel="Gal-scbwai" href="images/sc-bw/AttackingBot.png" title="Bot with attacking strategy"><img border="0" alt="" src="images/sc-bw/thumbs/AttackingBot_s.png"></a>
+                <a rel="Gal-scbwai" title="Bot with withdrawing strategy" href="images/sc-bw/WithdrawingBot.png"><img border="0" alt="" src="images/sc-bw/thumbs/WithdrawingBot_s.png"></a>
+                <a rel="Gal-scbwai" href="images/sc-bw/MarineVFirebat.png" title="Bot involved in uneven fight (Marine vs Firebat)"><img border="0" alt="" src="images/sc-bw/thumbs/MarineVFirebat_s.png"></a>
+                <a rel="Gal-scbwai" href="images/sc-bw/Squad2.png" title="Fight involving a Squad of units"><img border="0" alt="" src="images/sc-bw/thumbs/Squad2_s.png"></a>
+                <a rel="Gal-scbwai" title="System exploiting Zealot bug to win" href="images/sc-bw/SCBug.png"><img border="0" alt="" src="images/sc-bw/thumbs/SCBug_s.png"></a>
+
+                <script type="text/javascript">
+                    $(document).ready(function () {
+
+                        $("a[rel=Gal-scbwai]").fancybox({
+                            'transitionIn': 'elastic',
+                            'transitionOut': 'fade',
+                            'titlePosition': 'over',
+                            'titleFormat': function (title, currentArray, currentIndex, currentOpts) {
+                                return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+                            }
+                        });
+
+                    });
+                </script>
+
+            </div>
+
+            <h2>Code Sample</h2>
+            <p style="margin-right:30px; margin-left:30px; ">In order to test the functionality of the Genetic Algorithm devised for this experiment, a tester application was programmed to check how the procedure works for the XOR problem (a neural network that gives correct output for XOR inputs). The main method for the tester application is shown below.</p>
+            <div class="codeblock">
+                <pre class="brush: cpp;">int main()
+{
+    cout&lt;&lt;"This is a tester for the GA code (Yes, in C++)..."&lt;&lt;endl;
+
+    // Inputs for "exclusive or" problem
+    float inputs[4][2] = {{ 1.0, 1.0}, { 1.0, 0.0}, { 0.0, 1.0}, { 0.0, 0.0}};
+    // number of inputs
+    int noi = 2;
+    // Corresponding outpus
+    float expectedOutputs[4][1] = {{0}, {1}, {1}, {0}}; 
+    float *output = NULL;
+
+    // Create the neural network
+    int nol = 3;    // number of layers
+    int layers[] = {2,2,1};
+    int chromeSize = ((layers[0]+1)*layers[1]) + ((layers[1]+1)*layers[2]);
+    
+    float currentFittest = 10000, historicalBest = 10000;
+    while(currentFittest&gt;0.01)
+    {
+        Population *pop = new Population(chromeSize, "test.csv", 2);
+        pop-&gt;Load(20, chromeSize);
+        if(pop-&gt;IsPopulationEvaluated())
+        {
+            // Reproduce before picking a chromosome to evaluate
+            currentFittest = pop-&gt;GetFittestValue();
+            if(currentFittest&lt;historicalBest)
+                historicalBest = currentFittest;
+            cout&lt;&lt;"Fittest Chromosome is = "&lt;&lt;currentFittest&lt;&lt;"; \tHistorical Best = "&lt;&lt;historicalBest&lt;&lt;endl;
+            pop-&gt;RunEpoch();
+        }
+        int evalChrome = pop-&gt;GetNextChromosome2Evaluate();
+        NeuralNetwork *neuralNet = new NeuralNetwork(nol, layers, pop-&gt;GetChromosomeAt(evalChrome)-&gt;GetChromosome());
+
+        // Eval Neural Network error for this network
+        float error = 0.0;
+        for(int p=0; p&lt;4; p++ )
+        {
+            neuralNet-&gt;setInput(inputs[p], noi);
+
+            neuralNet-&gt;activate();
+
+            output = neuralNet-&gt;getOutput();
+            error += (output[0] - expectedOutputs[p][0])*(output[0] - expectedOutputs[p][0]);
+        }
+        error /= 4.0;
+
+        pop-&gt;GetChromosomeAt(evalChrome)-&gt;AddFitness(error);
+
+        neuralNet-&gt;~NeuralNetwork();
+        pop-&gt;Save();
+        pop-&gt;~Population();
+    }
+
+    system("pause");
+    return 1;
+}
+</pre></div>
+
+            <h2>Download</h2>
+            <div class="downloads">
+                <p><strong>Instructions:</strong></p>
+                <ul>
+                    <li>DLL file can be downloaded <a href="downloads/scbwai/OneVOneGAModuled.dll" class="red">here</a></li>
+                    <li>The downloaded DLL file can be injected into Starcraft: Brood War game using Chaoslauncher and BWAPI - deatils can be found <a href="http://code.google.com/p/bwapi/wiki/Injection" class="red">here</a></li>
+                </ul>
+            </div>
+
+            <div class="emptygap">&nbsp;</div>
+
+        </div>
+
+        <div class="port-footer" style="left:0; top:-48px; ">Prakash Prasad © 2011 <strong><big>&middot;</big></strong> Copenhagen, Denmark <strong><big>&middot;</big></strong> Contact
+            <script type="text/javascript">
+                document.write('<a href="mailto:' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + '@' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + 'p' + 'r' + 'a' + 's' + 'a' + 'd' + '.' + 'c' + 'o' + 'm' + '" class="light" >' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + '@' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + 'p' + 'r' + 'a' + 's' + 'a' + 'd' + '.' + 'c' + 'o' + 'm' + '</a>');
+            </script> for more details.</div>
+
+    </div>
+
+</body>
+
+</html>

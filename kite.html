@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<meta name="author" content="Prakash Prasad" >		
+	<script type="text/javascript" >
+
+	    var _gaq = _gaq || [];
+	    _gaq.push(['_setAccount', 'UA-27962903-1']);
+	    _gaq.push(['_setDomainName', 'prakashprasad.com']);
+	    _gaq.push(['_trackPageview']);
+
+	    (function () {
+	        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	    })();
+
+    </script>
+	<link rel="Shortcut Icon" href="http://prakashprasad.com/images/favicon.ico" type="image/x-icon" > 
+     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400|Open+Sans+Condensed:300,300italic&subset=latin,greek,greek-ext,latin-ext" rel="stylesheet" type="text/css" >
+	<link href="main.css" rel="stylesheet" type="text/css" >
+	<link rel="stylesheet" type="text/css" href="menu_style.css" >
+	<link rel="stylesheet" href="Libraries/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" >
+    <link type="text/css" rel="stylesheet" href="Libraries/syntaxhighlighter/styles/shCoreEclipse.css" >
+	
+	<title>High as a Kite (C#) - prakashprasad.com</title>
+	
+	<script type="text/javascript" src="Libraries/jquery-1.4.3.min.js" ></script>
+	<script src="Libraries/fancybox/jquery.fancybox-1.3.4.js" type="text/javascript" ></script>
+	<script type="text/javascript" src="Libraries/jwplayer/jwplayer.js" ></script>
+    <script type="text/javascript" src="Libraries/syntaxhighlighter/scripts/shCore.js" ></script>
+    <script type="text/javascript" src="Libraries/syntaxhighlighter/scripts/shBrushCSharp.js" ></script>
+	<script type="text/javascript" >	    SyntaxHighlighter.all();</script>
+</head>
+	<body class="port-body" >
+
+<a href="http://www.prakashprasad.com/blog" target="_blank" ><div class="port-blog" style="left:55px; top:-5px; " ></div></a>
+
+<a href="http://photo.prakashprasad.com" target="_blank" ><div class="port-photo" style="left:115px; top:-5px; " ></div></a>
+
+<div class="port-wrap" >
+<div class="port-header" onclick="location.href='index.html';" style="cursor:pointer; " ></div>
+
+<div class="nav-bar-container" >
+<ul id="navigation-1" >
+		<li><a href="index.html" title="Home" >Home</a></li>
+		<li><a href="resume.html" title="Résumé" >Résumé</a></li>
+		<li><a href="projects.html" title="Projects" class="navigation-sel" >Projects</a>
+			<ul class="navigation-2" >
+				<li><a href="projects_as.html" title="Actionscript Projects" >Actionscript</a></li>
+				<li><a href="projects_cpp.html" title="C++ Projects" >C++</a></li>
+				<li><a href="projects_cs.html" title="C# Projects" class="navigation-sel" >C#</a></li>
+				<li><a href="projects_java.html" title="Java Projects" >Java</a></li>
+				<li><a href="projects_u3d.html" title="Unity 3D Projects" >Unity 3D</a></li>
+				<li><a href="projects_u.html" title="Unrealscript Projects" >Unrealscript</a></li>
+			</ul>
+		</li>
+		<li><a href="contact.html" title="Contact" >Contact</a></li>
+</ul>
+</div>
+
+<div class="port-block" style="left:0; top:-36px; " >
+
+<h1>High as a Kite</h1>
+
+<h2>Game Description</h2>
+<div class="gamedescription" >
+<p>High as a Kite is a single player 2D game where players have to do certain movements with the Nintendo Wii remote to fly a kite. The objective of the game is for the player to get the kite to the top. The skyscape gradually changes to depict this movement - from the atmospheric lit, light-blue sky to a more dark-blue sky with space feel including stars towards the top. The kite’s journey however is riddled with winds of varying kind. Winds have two parameters - direction and speed. This provides a challenge to the player since a wind pocket with low speed means player’s motion has to be strong. Players also have to time the motion while the kite is rotating to make sure that it moves upwards.</p>
+</div>
+
+<h2>Programming Challenges</h2>
+<div class="programmingchallenge" >
+<p>Game input base on accelerometer is complicated largely due to the problem of categorizing detected motion into a particular type of actions. Accelerometer value changes are merely changing numbers until those numbers signify something. For flying a single string kite, the only motion of any consequence is tugging of the string. A tug (disregarding the direction of motion) would signify that the player wants to push the kite in the direction its pointing. If we simply take the accelerometer values in all directions (X, Y &amp; Z axis) then we have a tug vector applied by the player. And since we want to disregard any direction data, we can simply take the magnitude of this tug to represent the power that the player wants to apply.</p>
+</div>
+
+<h2>Features</h2>
+<div class="features" >
+<ul>
+	<li>Rendering engine developed using XNA Framework</li>
+	<li>2D panning camera</li>
+	<li>Audio engine using XACT3 (Microsoft Cross-Platform Audio Creation Tool)</li>
+	<li>Input via Nintendo Wii remote supported using WiimoteLib</li>
+</ul>
+</div>
+
+<h2>Video</h2>
+<div class="videotrailer" style="width:720px; " >
+	<video src="images/kite/video/highasakite.mp4" width="720" height="403" id="container" volume="100" autostart="false" poster="images/kite/video/poster.png" >
+	</video>
+
+	<script type="text/javascript" >
+		jwplayer("container").setup({
+			flashplayer: "Libraries/jwplayer/player.swf"
+		});
+	</script>
+</div>
+
+<h2>Screenshots</h2>
+<div class="screenshots" >
+
+<a rel="Gal-scbwai" title="Cover screen for the game" href="images/kite/kite_cover.png" ><img border="0" alt="" src="images/kite/thumbs/kite_cover_s.png" ></a>
+<a rel="Gal-scbwai" title="Instructions on how to start and play the game" href="images/kite/kite_instructions.png" ><img border="0" alt="" src="images/kite/thumbs/kite_instructions_s.png" ></a>
+<a rel="Gal-scbwai" title="Lower skyscape of the game's level" href="images/kite/kite_ground.png" ><img border="0" alt="" src="images/kite/thumbs/kite_ground_s.png" ></a>
+<a rel="Gal-scbwai" title="Skyscape when the player has reached middle of the sky" href="images/kite/kite_middle.png" ><img border="0" alt="" src="images/kite/thumbs/kite_middle_s.png" ></a>
+<a rel="Gal-scbwai" title="Space like look of the sky when at top" href="images/kite/kite_top.png" ><img border="0" alt="" src="images/kite/thumbs/kite_top_s.png" ></a>
+<a rel="Gal-scbwai" title="Player lose when kite reaches the ground level" href="images/kite/kite_lose.png" ><img border="0" alt="" src="images/kite/thumbs/kite_lose_s.png" ></a>
+<a rel="Gal-scbwai" title="The winning condition is to get the kite to the top" href="images/kite/kite_win.png" ><img border="0" alt="" src="images/kite/thumbs/kite_win_s.png" ></a>
+
+<script type="text/javascript" >
+		$(document).ready(function() {
+
+	$("a[rel=Gal-scbwai]").fancybox({
+				'transitionIn'		: 'elastic',
+				'transitionOut'		: 'fade',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+			
+		});
+	</script>
+
+</div>
+
+<h2>Code Sample</h2>
+<p style="margin-right:30px; margin-left:30px; " >The Wii remote's input methods are encapsulated in a class which updates every game loop and looks for the magnitude of player's input. However, to avoid the player from spamming input with tugs all the time, the method implements a certain amount of cooldown time as shown in the code here:</p>
+<div class="codeblock" >
+<pre class="brush: csharp;" >public void Update(GameTime gameTime)
+{
+    Vector3 Values = new Vector3(CurrentWiimoteState.AccelState.Values.X, 
+        CurrentWiimoteState.AccelState.Values.Y, 
+        CurrentWiimoteState.AccelState.Values.Z);
+    float magnitude = Values.Length();
+    
+    if ((buttonA == 0) &amp;&amp; (CurrentWiimoteState.ButtonState.A))
+        buttonA = -1;
+    else if ((buttonA == -1) &amp;&amp; (!CurrentWiimoteState.ButtonState.A))
+        buttonA = 1;
+    if ((buttonHome == 0) &amp;&amp; (CurrentWiimoteState.ButtonState.Home))
+        buttonHome = -1;
+    else if ((buttonHome == -1) &amp;&amp; (!CurrentWiimoteState.ButtonState.Home))
+        buttonHome = 1;
+    
+    switch (mState)
+    {
+        case "READY":
+            if (magnitude &gt;= mThreshold)
+            {
+                mState = "AVERAGING";
+                mAverage = magnitude;
+                mAverageCount = 1;
+                mTicker = gameTime.ElapsedGameTime.Milliseconds;
+            }
+            break;
+        case "AVERAGING":
+            if (mTicker &gt; mAverageTime)
+            {
+                mStrength = mAverage / mAverageCount;
+                mTicker = 0;
+                mState = "COOLDOWN";
+            }
+            else
+            {
+                mAverage += magnitude;
+                mAverageCount++;
+                mTicker += gameTime.ElapsedGameTime.Milliseconds;
+            }
+            break;
+        case "COOLDOWN":
+            if (mTicker &gt; mDelayTime)
+            {
+                mState = "READY";
+                mTicker = 0;
+                mTimeleft = mTicker;
+            }
+            else
+            {
+                mTicker += gameTime.ElapsedGameTime.Milliseconds;
+                mTimeleft = mTicker;
+            }
+            break;
+    }
+}
+</pre></div>
+
+<h2>Download</h2>
+	<div class="downloads" >
+		<p><strong>Bluetooth Setup Instructions:</strong></p>
+		<ul>
+			<li>Install Bluesoleil 6 driver, available <a href="downloads/highasakite/BluetoothDriver.rar" class="red" >here</a></li>
+			<li>Plug in bluetooth dongle.</li>
+			<li>Start the Bluesoleil client.</li>
+			<li>The first time you insert the bluetooth dongle, Bluesoleil client will ask to register the device. Click "OK" on the screen that appears.</li>
+			<li>Turn the wii-remote discoverable, by holding down buttons 1 and 2 on the wiimote at the same time. (the 4 LED lights on the wiimote will flash to symbolize that its in discovery mode).</li>
+			<li>Double-click the orange button to check for bluetooth devices in range or press F5 on the keyboard.</li>
+			<li>The wiimote should show up as 'Nintendo RVL-CNT4-01'.</li>
+			<li>Double-click on the icon of the wiimote, the icon will turn yellow.</li>
+			<li>Right click the wiimote icon in the bluesoleil window, select 'connect' and 'bluetooth human interface device service'.</li>
+			<li>Done! (to disconnect, turn off wiimote by pressing its power button).</li>
+		</ul>
+		<p><strong>Game Setup Instructions:</strong></p>
+		<ul>
+			<li>Download the game <a href="downloads/highasakite/highasakite_install.rar" class="red" >here</a>, extract the file and run 'setup.exe'.</li>
+			<li>Directions on how to play the game can be found <a href="downloads/highasakite/kite_setup_instructions.pdf" class="red" >here</a></li>
+		</ul>
+	</div>
+
+<div class="emptygap" >&nbsp;</div>
+
+</div>
+
+<div class="port-footer" style="left:0; top:-46px; " >Prakash Prasad © 2011 <strong><big>&middot;</big></strong> Copenhagen, Denmark <strong><big>&middot;</big></strong> Contact <script type="text/javascript" >document.write('<a href="mailto:'+'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + '@' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + 'p' + 'r' + 'a' + 's' + 'a' + 'd' + '.' + 'c' + 'o' + 'm'+'" class="light" >'+'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + '@' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + 'p' + 'r' + 'a' + 's' + 'a' + 'd' + '.' + 'c' + 'o' + 'm'+'</a>');</script> for more details.</div>
+
+</div>
+
+</body></html>
