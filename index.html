@@ -1,100 +1,86 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<html><head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<meta name="author" content="Prakash Prasad" >		
+	<script type="text/javascript" >
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <meta name="author" content="Prakash Prasad">
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-27962903-1']);
-        _gaq.push(['_setDomainName', 'prakashprasad.com']);
-        _gaq.push(['_trackPageview']);
+	    var _gaq = _gaq || [];
+	    _gaq.push(['_setAccount', 'UA-27962903-1']);
+	    _gaq.push(['_setDomainName', 'prakashprasad.com']);
+	    _gaq.push(['_trackPageview']);
 
-        (function () {
-            var ga = document.createElement('script');
-            ga.type = 'text/javascript';
-            ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
-        })();
+	    (function () {
+	        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	    })();
+
     </script>
-    <link rel="Shortcut Icon" href="images/favicon.ico" type="image/x-icon">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400|Open+Sans+Condensed:300,300italic&subset=latin,greek,greek-ext,latin-ext" rel="stylesheet" type="text/css">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="css/menu_style.css">
-    <link rel="stylesheet" href="js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen">
-
-    <title>Portfolio - prakashprasad.com</title>
-
-    <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
-    <script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.js"></script>
+	<link rel="Shortcut Icon" href="http://prakashprasad.com/images/favicon.ico" type="image/x-icon" > 
+     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400|Open+Sans+Condensed:300,300italic&subset=latin,greek,greek-ext,latin-ext" rel="stylesheet" type="text/css" >
+	<link href="main.css" rel="stylesheet" type="text/css" >
+	<link rel="stylesheet" type="text/css" href="menu_style.css" >
+	<link rel="stylesheet" href="Libraries/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" >
+	
+	<title>Portfolio - prakashprasad.com</title>
+	
+	<script type="text/javascript" src="Libraries/jquery-1.4.3.min.js" ></script>
+	<script src="Libraries/fancybox/jquery.fancybox-1.3.4.js" type="text/javascript" ></script>
 </head>
+	<body class="port-body" >
 
-<body class="port-body">
+<a href="http://www.prakashprasad.com/blog" target="_blank" ><div class="port-blog" style="left:55px; top:-5px; " ></div></a>
 
-    <a href="http://www.prakashprasad.com/blog" target="_blank">
-        <div class="port-blog" style="left:55px; top:-5px; "></div>
-    </a>
+<a href="http://photo.prakashprasad.com" target="_blank" ><div class="port-photo" style="left:115px; top:-5px; " ></div></a>
 
-    <a href="http://photo.prakashprasad.com" target="_blank">
-        <div class="port-photo" style="left:115px; top:-5px; "></div>
-    </a>
+<div class="port-wrap" >
+<div class="port-header" onclick="location.href='index.html';" style="cursor:pointer; " ></div>
 
-    <div class="port-wrap">
-        <div class="port-header" onclick="location.href='index.html';" style="cursor:pointer; "></div>
+<div class="nav-bar-container" >
+<ul id="navigation-1" >
+		<li><a href="index.html" title="Home" class="navigation-sel" >Home</a></li>
+		<li><a href="resume.html" title="Résumé" >Résumé</a></li>
+		<li><a href="projects.html" title="Projects" >Projects</a>
+			<ul class="navigation-2" >
+				<li><a href="projects_as.html" title="Actionscript Projects" >Actionscript</a></li>
+				<li><a href="projects_cpp.html" title="C++ Projects" >C++</a></li>
+				<li><a href="projects_cs.html" title="C# Projects" >C#</a></li>
+				<li><a href="projects_java.html" title="Java Projects" >Java</a></li>
+				<li><a href="projects_u3d.html" title="Unity 3D Projects" >Unity 3D</a></li>
+				<li><a href="projects_u.html" title="Unrealscript Projects" >Unrealscript</a></li>
+			</ul>
+		</li>
+		<li><a href="contact.html" title="Contact" >Contact</a></li>
+</ul>
+</div>
 
-        <div class="nav-bar-container">
-            <ul id="navigation-1">
-                <li><a href="index.html" title="Home" class="navigation-sel">Home</a></li>
-                <li><a href="resume.html" title="Résumé">Résumé</a></li>
-                <li><a href="projects.html" title="Projects">Projects</a>
-                    <ul class="navigation-2">
-                        <li><a href="projects_as.html" title="Actionscript Projects">Actionscript</a></li>
-                        <li><a href="projects_cpp.html" title="C++ Projects">C++</a></li>
-                        <li><a href="projects_cs.html" title="C# Projects">C#</a></li>
-                        <li><a href="projects_java.html" title="Java Projects">Java</a></li>
-                        <li><a href="projects_u3d.html" title="Unity 3D Projects">Unity 3D</a></li>
-                        <li><a href="projects_u.html" title="Unreal Engine Projects">Unreal Engine</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html" title="Contact">Contact</a></li>
-            </ul>
-        </div>
+<div class="port-block" style="left:0; top:-36px; " >
 
-        <div class="port-block" style="left:0; top:-36px; ">
+<h1>Welcome</h1>
+<div class="latestnews" >
+<p>Hello, and welcome to prakashprasad.com, which serves as my game programming portfolio. This website is dedicated to illustrating all of my personal projects. Please feel free to look around and try the games.</p>
+<p><strong><u>News</u></strong></p>
+<ul>
+    <li><strong>14 Nov 2011</strong> - Started working at <a href="http://www.retomoto.dk/" target="_blank" class="red" >Reto Moto</a> as a C# programmer on their MMO FPS game <a href="http://www.heroesandgenerals.com/" target="_blank" class="red" >Heroes & Generals</a></li>
+    <li><strong>08 Nov 2011</strong> - <a href="downloads/ACE2011_Carioca.pdf" target="_blank" class="red">Paper</a> about Master Thesis Game, <a href="carioca.html" class="red" >Carioca</a> published at <strong>ACE 2011</strong> conference held in Lisbon, Portugal.</li>
+	<li><strong>Jan 2015</strong> - Participated in Nordic Game Jam 2015</li>
+	<li><strong>Jan 2014</strong> - Participated in Nordic Game Jam 2014</li>
+	<li><strong>Jan 2012</strong> - Participated in Nordic Game Jam 2012. Worked on <a href="dontpanic.html" class="red" >Don't Panic</a></li>
+	<li><strong>01 Oct 2011</strong> - Portfolio Website Released</li>
+	<li><strong>06 Sep 2011</strong> - Passed final exam of graduate studies</li>
+	<li><strong>01 Sep 2011</strong> - Work on portfolio Website started</li>
+	<li><strong>Jan 2011</strong> - Participated in Nordic Game Jam 2011. Worked on <a href="godsmustbecrazy.html" class="red" >Gods Must be Crazy</a></li>
+	<li><strong>01 Aug 2010</strong> - Work started on porting "Monkey of Puppets" to Actionscript</li>
+	<li><strong>Jan 2010</strong> - Participated in Nordic Game Jam 2010. Worked on <a href="monkeys_xna.html" class="red" >Monkey of Puppets</a></li>
+</ul>
+</div>
 
-            <h1>Welcome</h1>
-            <div class="latestnews">
-                <p>Hello, and welcome to prakashprasad.com, which serves as my game programming portfolio. This website is dedicated to illustrating all of my personal projects. Please feel free to look around and try the games.</p>
-                <p><strong><u>News</u></strong></p>
-                <ul>
-					<li><strong>20 Jan 2016</strong> - Started working at <a href="http://www.futureuniverse.com/" target="_blank" class="red">The Future Group</a> as a Game Programmer for the Unreal Engine</li>
-                    <li><strong>14 Nov 2011</strong> - Started working at <a href="http://www.retomoto.dk/" target="_blank" class="red">Reto Moto</a> as a C# programmer on their MMO FPS game <a href="http://www.heroesandgenerals.com/" target="_blank" class="red">Heroes & Generals</a></li>
-                    <li><strong>08 Nov 2011</strong> - <a href="downloads/ACE2011_Carioca.pdf" target="_blank" class="red">Paper</a> about Master Thesis Game, <a href="carioca.html" class="red">Carioca</a> published at <a href="http://www.ace2011.org/" target="_blank" class="red">ACE 2011</a> conference held in Lisbon, Portugal. </li>
-                    <li><strong>Jan 2015</strong> - Participated in Nordic Game Jam 2015</li>
-                    <li><strong>Jan 2014</strong> - Participated in Nordic Game Jam 2014</li>
-                    <li><strong>Jan 2012</strong> - Participated in Nordic Game Jam 2012. Worked on <a href="dontpanic.html" class="red">Don't Panic</a></li>
-                    <li><strong>01 Oct 2011</strong> - Portfolio Website Released</li>
-                    <li><strong>06 Sep 2011</strong> - Passed final exam of graduate studies</li>
-                    <li><strong>01 Sep 2011</strong> - Work on portfolio Website started</li>
-                    <li><strong>Jan 2011</strong> - Participated in Nordic Game Jam 2011. Worked on <a href="godsmustbecrazy.html" class="red">Gods Must be Crazy</a></li>
-                    <li><strong>01 Aug 2010</strong> - Work started on porting "Monkey of Puppets" to Actionscript</li>
-                    <li><strong>Jan 2010</strong> - Participated in Nordic Game Jam 2010. Worked on <a href="monkeys_xna.html" class="red">Monkey of Puppets</a></li>
-                </ul>
-            </div>
+<div class="emptygap" >&nbsp;</div>
 
-            <div class="emptygap">&nbsp;</div>
+</div>
 
-        </div>
+<div class="port-footer" style="left:0; top:-48px; " >Prakash Prasad © 2011 <strong><big>&middot;</big></strong> Copenhagen, Denmark <strong><big>&middot;</big></strong> Contact <script type="text/javascript" >document.write('<a href="mailto:'+'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + '@' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + 'p' + 'r' + 'a' + 's' + 'a' + 'd' + '.' + 'c' + 'o' + 'm'+'" class="light" >'+'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + '@' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + 'p' + 'r' + 'a' + 's' + 'a' + 'd' + '.' + 'c' + 'o' + 'm'+'</a>');</script> for more details.</div>
 
-        <div class="port-footer" style="left:0; top:-48px; ">Prakash Prasad © 2011 <strong><big>&middot;</big></strong> Copenhagen, Denmark <strong><big>&middot;</big></strong> Contact
-            <script type="text/javascript">
-                document.write('<a href="mailto:' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + '@' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + 'p' + 'r' + 'a' + 's' + 'a' + 'd' + '.' + 'c' + 'o' + 'm' + '" class="light" >' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + '@' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + 'p' + 'r' + 'a' + 's' + 'a' + 'd' + '.' + 'c' + 'o' + 'm' + '</a>');
-            </script> for more details.</div>
+</div>
 
-    </div>
-
-</body>
-
-</html>
+</body></html>

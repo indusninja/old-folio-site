@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Hello SyntaxHighlighter</title>
+	<script type="text/javascript" src="scripts/shCore.js"></script>
+	<script type="text/javascript" src="scripts/shBrushAS3.js"></script>
+    <script type="text/javascript" src="scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="scripts/shBrushCpp.js"></script>
+    <script type="text/javascript" src="scripts/shBrushCSharp.js"></script>
+    <script type="text/javascript" src="scripts/shBrushJava.js"></script>
+	<link type="text/css" rel="stylesheet" href="styles/shCoreEclipse.css"/>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body style="background: white; font-family: Helvetica">
+
+<h1>Hello SyntaxHighlighter</h1>
+<pre class="brush: js;">
+function ActivateBots(int aPreFabNumber)
+{
+    local int id, isalive;
+    local string lName, lType, lSex, lHome, lDrugHome;
+    local ENPCType eType;
+    local float lHealth, lMoney, lFatigue, lDrugDosesTaken, lMenace, lHunger;
+    local name lstate;
+    local Vector loc, dbloc;
+
+    if( NumBots==0 )
+    {
+        mDatabase.ClearRowsHistory();
+        while(mDatabase.GetNextCharacterInfo(id, lName, lType, lSex, lHealth, lMoney, lFatigue, lDrugDosesTaken, lMenace, lHunger, lHome, lDrugHome, dbloc, isalive, lstate))
+        {
+            if( dbloc.X==-1 &amp;&amp; dbloc.Y==-1 &amp;&amp; dbloc.Z==-1 )
+                loc = GetHomeVectorLocation( name(lHome) );
+            else
+                loc = dbloc;
+
+            eType = NPCTYPE_All;
+
+            if( loc.X!=0 &amp;&amp; loc.Y!=0 &amp;&amp; loc.Z!=0 )
+            {
+                switch( Caps(lType) )
+                {
+                    case "CIVILIAN":
+                        eType = NPCTYPE_Civilian;
+                        break;
+                    case "DRUGGIE":
+                        eType = NPCTYPE_Druggie;
+                        break;
+                    case "POLICE":
+                        eType = NPCTYPE_Police;
+                        break;
+                    case "GANGSTER":
+                        eType = NPCTYPE_Gangster;
+                        break;
+                    case "KINGPIN":
+                        eType = NPCTYPE_Kingpin;
+                        break;
+                }
+                if( eType!=NPCTYPE_All )
+                    if( isalive==1 )
+                        WakeupCarioca( id, lName, eType, lSex, lHealth, lMoney, lFatigue, lDrugDosesTaken, lMenace, lHunger, loc, name(lHome), name(lDrugHome), lstate);
+            }
+        }
+    }
+}
+</pre>
+
+<pre class="brush: as3;">
+override public function update():void
+{
+    if (Input.check("right") &amp;&amp; !collide("level", x + (speed * FP.elapsed), y)) x += speed * FP.elapsed;
+    if (Input.check("left") &amp;&amp; !collide("level", x - (speed * FP.elapsed), y)) x -= speed * FP.elapsed;
+    if (Input.check("up") &amp;&amp; !collide("level", x, y - (speed * FP.elapsed))) y -= speed * FP.elapsed;
+    if (Input.check("down") &amp;&amp; !collide("level", x, y + (speed * FP.elapsed))) y += speed * FP.elapsed;
+    
+    if(x &gt; 640 - 32) x = 640 - 32;
+    if(x &lt; 0) x = 0;
+    if(y &lt; 0) y = 0;
+    if(y &gt; 480 - 32) y = 480 - 32;
+    
+    if (collide("gorilla", x, y) != null)   
+    {
+        FP.world.remove(this);
+        FP.log("GAME OVER!");
+    }
+    
+    if (collide("key", x, y) != null)   
+    {
+        hasKey = true;
+        FP.log("Player haz the Keys!!!");
+    }
+    
+    if ( (collide("door", x, y) != null) &amp;&amp; hasKey )
+    {
+        FP.log("Player completed the Level!!!");
+    }
+    
+    super.update();
+}
+</pre>
+
+<pre class="brush: cpp;">
+int main()
+{
+    cout&lt;&lt;"This is a tester for the GA code (Yes, in C++)..."&lt;&lt;endl;
+
+    // Inputs for "exclusive or" problem
+    float inputs[4][2] = {{ 1.0, 1.0}, { 1.0, 0.0}, { 0.0, 1.0}, { 0.0, 0.0}};
+    // number of inputs
+    int noi = 2;
+    // Corresponding outpus
+    float expectedOutputs[4][1] = {{0}, {1}, {1}, {0}}; 
+    float *output = NULL;
+
+    // Create the neural network
+    int nol = 3;    // number of layers
+    int layers[] = {2,2,1};
+    int chromeSize = ((layers[0]+1)*layers[1]) + ((layers[1]+1)*layers[2]);
+    
+    float currentFittest = 10000, historicalBest = 10000;
+    while(currentFittest&gt;0.01)
+    {
+        Population *pop = new Population(chromeSize, "test.csv", 2);
+        pop-&gt;Load(20, chromeSize);
+        if(pop-&gt;IsPopulationEvaluated())
+        {
+            // Reproduce before picking a chromosome to evaluate
+            currentFittest = pop-&gt;GetFittestValue();
+            if(currentFittest&lt;historicalBest)
+                historicalBest = currentFittest;
+            cout&lt;&lt;"Fittest Chromosome is = "&lt;&lt;currentFittest&lt;&lt;"; \tHistorical Best = "&lt;&lt;historicalBest&lt;&lt;endl;
+            pop-&gt;RunEpoch();
+        }
+        int evalChrome = pop-&gt;GetNextChromosome2Evaluate();
+        NeuralNetwork *neuralNet = new NeuralNetwork(nol, layers, pop-&gt;GetChromosomeAt(evalChrome)-&gt;GetChromosome());
+
+        // Eval Neural Network error for this network
+        float error = 0.0;
+        for(int p=0; p&lt;4; p++ )
+        {
+            neuralNet-&gt;setInput(inputs[p], noi);
+
+            neuralNet-&gt;activate();
+
+            output = neuralNet-&gt;getOutput();
+            error += (output[0] - expectedOutputs[p][0])*(output[0] - expectedOutputs[p][0]);
+        }
+        error /= 4.0;
+
+        pop-&gt;GetChromosomeAt(evalChrome)-&gt;AddFitness(error);
+
+        neuralNet-&gt;~NeuralNetwork();
+        pop-&gt;Save();
+        pop-&gt;~Population();
+    }
+
+    system("pause");
+    return 1;
+}
+</pre>
+
+<pre class="brush: csharp;">
+protected override void Draw(GameTime gameTime)
+{
+    GraphicsDevice.Clear(Color.Black);
+
+    spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.NonPremultiplied);
+
+    // Draw all the menus
+    if (menusRunning)
+    {
+        foreach (MenuWindow currentMenu in menuList)
+            currentMenu.Draw(spriteBatch, ScreenWidth, ScreenHeight);
+    }
+    else if (endGame)
+    {
+        Texture2D screen = winState ? Content.Load<texture2d>("EndScreenWin") : Content.Load<texture2d>("EndScreenLose");
+        spriteBatch.Draw(screen, new Rectangle(0,0,ScreenWidth, ScreenHeight), Color.White);
+    }
+    else
+    {
+        spriteBatch.Draw(TextureBackgroundMenu, new Rectangle(0, 0, GalaxyGame.ScreenWidth, GalaxyGame.ScreenHeight), Color.White);
+
+        if (drawOrbit)
+        {
+            DrawPath(currentState.X, currentState.Y, 1f);
+        }
+
+        // Get sorted list so UpdateOrder also defines render order
+        IEnumerable<gamecomponent> sortedComponents = Components.Cast<gamecomponent>().OrderBy(gameComponent =&gt; gameComponent.UpdateOrder);
+        foreach (CelestialObj gameObject in sortedComponents)
+        {
+            if (gameObject != null)
+            {
+                gameObject.Draw(spriteBatch);
+            }
+        }
+
+        for (int i = 0; i &lt; ExplosionLocations.Count; i++)
+        {
+            Rectangle dest = new Rectangle((int)ExplosionLocations[i].X, (int)ExplosionLocations[i].Y, 64, 64);
+            Rectangle source = new Rectangle((int)(CurrentKeyTime[i] / keyTime) * 64, 0, 64, 64);
+            spriteBatch.Draw(explosion, dest, source, Color.White);
+        }
+
+        hud.Draw(spriteBatch);
+    }
+
+    spriteBatch.End();
+
+    base.Draw(gameTime);
+}
+</pre>
+
+<pre class="brush: java;">
+public void play() {
+	turn++;
+	board.rollDice();
+	double max = 0;
+	int bestIndex = -1;
+	// Apple e-Greedy logic to explore once in a while
+	if (RandomGenerator.generator.nextDouble() <= eGreedy) {
+		for (int i = 0; i < 4; i++) {
+			double value = analyzeBrickSituation(i);
+			if (value >= max && value >= 0) {
+				bestIndex = i;
+				max = value;
+			}
+		}
+	} else {
+        // find a random moveable brick
+		for (int i = 0; i < 4; i++)
+		{
+			if (board.moveable(i)) {
+				double temp = RandomGenerator.generator.nextDouble();
+				if (temp > max) {
+					max = temp;
+					bestIndex = i;
+				}
+			}
+		}
+		if (bestIndex != -1)
+			max = analyzeBrickSituation(bestIndex);
+	}
+	if (previousMoveIndex != -1)
+		UpdateQValue(max);
+	if (bestIndex != -1) {
+		board.moveBrick(bestIndex);
+
+	previousMoveIndex = bestIndex;
+	previousInputs = brickInputs[bestIndex];
+	previousQValue = max;
+	previousBrickPositions = board.getMyBricks();
+	}
+}
+</pre>
+
+</html>
