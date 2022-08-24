@@ -1,134 +1,171 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-	<meta name="author" content="Prakash Prasad" >		
-	<script type="text/javascript" >
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
+<html>
 
-	    var _gaq = _gaq || [];
-	    _gaq.push(['_setAccount', 'UA-27962903-1']);
-	    _gaq.push(['_setDomainName', 'prakashprasad.com']);
-	    _gaq.push(['_trackPageview']);
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Prakash Prasad">
+	<script type="text/javascript">
 
-	    (function () {
-	        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	    })();
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-27962903-1']);
+		_gaq.push(['_setDomainName', 'prakashprasad.com']);
+		_gaq.push(['_trackPageview']);
 
-    </script>
-	<link rel="Shortcut Icon" href="http://prakashprasad.com/images/favicon.ico" type="image/x-icon" > 
-     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400|Open+Sans+Condensed:300,300italic&subset=latin,greek,greek-ext,latin-ext" rel="stylesheet" type="text/css" >
-	<link href="main.css" rel="stylesheet" type="text/css" >
-	<link rel="stylesheet" type="text/css" href="menu_style.css" >
-	<link rel="stylesheet" href="Libraries/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" >
-    <link type="text/css" rel="stylesheet" href="Libraries/syntaxhighlighter/styles/shCoreEclipse.css" >
-	
+		(function () {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+	<link rel="Shortcut Icon" href="https://prakashprasad.com/images/favicon.ico" type="image/x-icon">
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Open+Sans+Condensed:300,300italic&subset=latin,greek,greek-ext,latin-ext"
+		rel="stylesheet" type="text/css">
+	<link href="main.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="menu_style.css">
+	<link rel="stylesheet" href="Libraries/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen">
+	<link type="text/css" rel="stylesheet" href="Libraries/syntaxhighlighter/styles/shCoreEclipse.css">
+
 	<title>The Gods Must be Crazy (C#) - prakashprasad.com</title>
-	
-	<script type="text/javascript" src="Libraries/jquery-1.4.3.min.js" ></script>
-	<script src="Libraries/fancybox/jquery.fancybox-1.3.4.js" type="text/javascript" ></script>
-	<script type="text/javascript" src="Libraries/jwplayer/jwplayer.js" ></script>
-    <script type="text/javascript" src="Libraries/syntaxhighlighter/scripts/shCore.js" ></script>
-    <script type="text/javascript" src="Libraries/syntaxhighlighter/scripts/shBrushCSharp.js" ></script>
-	<script type="text/javascript" >	    SyntaxHighlighter.all();</script>
+
+	<script type="text/javascript" src="Libraries/jquery-1.4.3.min.js"></script>
+	<script src="Libraries/fancybox/jquery.fancybox-1.3.4.js" type="text/javascript"></script>
+	<script type="text/javascript" src="Libraries/jwplayer/jwplayer.js"></script>
+	<script type="text/javascript" src="Libraries/syntaxhighlighter/scripts/shCore.js"></script>
+	<script type="text/javascript" src="Libraries/syntaxhighlighter/scripts/shBrushCSharp.js"></script>
+	<script type="text/javascript">	    SyntaxHighlighter.all();</script>
 </head>
-	<body class="port-body" >
 
-<a href="http://www.prakashprasad.com/blog" target="_blank" ><div class="port-blog" style="left:55px; top:-5px; " ></div></a>
+<body class="port-body">
 
-<a href="http://photo.prakashprasad.com" target="_blank" ><div class="port-photo" style="left:115px; top:-5px; " ></div></a>
+	<a href="https://www.prakashprasad.com/blog" target="_blank">
+		<div class="port-blog" style="left:55px; top:-5px; "></div>
+	</a>
 
-<div class="port-wrap" >
-<div class="port-header" onclick="location.href='index.html';" style="cursor:pointer; " ></div>
+	<a href="https://photo.prakashprasad.com" target="_blank">
+		<div class="port-photo" style="left:115px; top:-5px; "></div>
+	</a>
 
-<div class="nav-bar-container" >
-<ul id="navigation-1" >
-		<li><a href="index.html" title="Home" >Home</a></li>
-		<li><a href="resume.html" title="Résumé" >Résumé</a></li>
-		<li><a href="projects.html" title="Projects" class="navigation-sel" >Projects</a>
-			<ul class="navigation-2" >
-				<li><a href="projects_as.html" title="Actionscript Projects" >Actionscript</a></li>
-				<li><a href="projects_cpp.html" title="C++ Projects" >C++</a></li>
-				<li><a href="projects_cs.html" title="C# Projects" class="navigation-sel" >C#</a></li>
-				<li><a href="projects_java.html" title="Java Projects" >Java</a></li>
-				<li><a href="projects_u3d.html" title="Unity 3D Projects" >Unity 3D</a></li>
-				<li><a href="projects_u.html" title="Unrealscript Projects" >Unrealscript</a></li>
+	<div class="port-wrap">
+		<div class="port-header" onclick="location.href='index.html';" style="cursor:pointer; "></div>
+
+		<div class="nav-bar-container">
+			<ul id="navigation-1">
+				<li><a href="index.html" title="Home">Home</a></li>
+				<li><a href="resume.html" title="Résumé">Résumé</a></li>
+				<li><a href="projects.html" title="Projects" class="navigation-sel">Projects</a>
+					<ul class="navigation-2">
+						<li><a href="projects_as.html" title="Actionscript Projects">Actionscript</a></li>
+						<li><a href="projects_cpp.html" title="C++ Projects">C++</a></li>
+						<li><a href="projects_cs.html" title="C# Projects" class="navigation-sel">C#</a></li>
+						<li><a href="projects_java.html" title="Java Projects">Java</a></li>
+						<li><a href="projects_u3d.html" title="Unity 3D Projects">Unity 3D</a></li>
+						<li><a href="projects_u.html" title="Unrealscript Projects">Unrealscript</a></li>
+					</ul>
+				</li>
+				<li><a href="contact.html" title="Contact">Contact</a></li>
 			</ul>
-		</li>
-		<li><a href="contact.html" title="Contact" >Contact</a></li>
-</ul>
-</div>
+		</div>
 
-<div class="port-block" style="left:0; top:-36px; " >
+		<div class="port-block" style="left:0; top:-36px; ">
 
-<h1>The Gods Must be Crazy</h1>
+			<h1>The Gods Must be Crazy</h1>
 
-<h2>Game Description</h2>
-<div class="gamedescription" >
-<p>The Gods Must be Crazy is a single player game where players have the objective of destroying life in the solar system by engaging with a simple solar physics system of frictionless motion in space which is guided by gravity of several celestial bodies. Each level provides new solar systems with their unique hurdles for the player to overcome. The human population spreads in a pattern where once a planet is filled with people, a spaceship is launched to spread life within that solar system. If no more planets are left to inhabit, then the spaceship will leave the solar system, meaning that the player has lost. The tools in the player's arsenal to stop them are meteors and solar flares. Meteors can be launched from a meteor field by selecting a direction and some speed. These use up higher energy from the “divine power” bar as compared to solar flares, but have higher damage. Solar flares are fired from the sun to the point where the player right-clicks.</p>
-</div>
+			<h2>Game Description</h2>
+			<div class="gamedescription">
+				<p>The Gods Must be Crazy is a single player game where players have the objective of destroying life in
+					the solar system by engaging with a simple solar physics system of frictionless motion in space
+					which is guided by gravity of several celestial bodies. Each level provides new solar systems with
+					their unique hurdles for the player to overcome. The human population spreads in a pattern where
+					once a planet is filled with people, a spaceship is launched to spread life within that solar
+					system. If no more planets are left to inhabit, then the spaceship will leave the solar system,
+					meaning that the player has lost. The tools in the player's arsenal to stop them are meteors and
+					solar flares. Meteors can be launched from a meteor field by selecting a direction and some speed.
+					These use up higher energy from the “divine power” bar as compared to solar flares, but have higher
+					damage. Solar flares are fired from the sun to the point where the player right-clicks.</p>
+			</div>
 
-<h2>Programming Challenges</h2>
-<div class="programmingchallenge" >
-<p>Making a game in 48 hours presents the most obvious challenge - to overcome one’s own stupidity. The mistake I made during developing this game was with the collision detection system which lead to many wasted hours debugging the problem. At some point I had to give up on tweaking the collision detection system and concede that it would do for now. It was only after the game jam was finished that I figured out the bug in the system, which related to the incorrect assumption made about XNA sprite origin and their position.</p>
-</div>
+			<h2>Programming Challenges</h2>
+			<div class="programmingchallenge">
+				<p>Making a game in 48 hours presents the most obvious challenge - to overcome one’s own stupidity. The
+					mistake I made during developing this game was with the collision detection system which lead to
+					many wasted hours debugging the problem. At some point I had to give up on tweaking the collision
+					detection system and concede that it would do for now. It was only after the game jam was finished
+					that I figured out the bug in the system, which related to the incorrect assumption made about XNA
+					sprite origin and their position.</p>
+			</div>
 
-<h2>Features</h2>
-<div class="features" >
-<ul>
-	<li>2D rendering engine written in C# and based on XNA Framework’s component system</li>
-	<li>Circle based collision detection system</li>
-	<li>Simulation of object motion in space</li>
-	<li>Text based level editor</li>
-	<li>Menu system</li>
-</ul>
-</div>
+			<h2>Features</h2>
+			<div class="features">
+				<ul>
+					<li>2D rendering engine written in C# and based on XNA Framework’s component system</li>
+					<li>Circle based collision detection system</li>
+					<li>Simulation of object motion in space</li>
+					<li>Text based level editor</li>
+					<li>Menu system</li>
+				</ul>
+			</div>
 
-<h2>Video</h2>
-<div class="videotrailer" style="width:720px; " >
-	<video src="images/godsmustbecrazy/video/godsmustbecrazy_video.mp4" width="720" height="432" id="container" volume="100" autostart="false" poster="images/godsmustbecrazy/video/poster.png" >
-	</video>
+			<h2>Video</h2>
+			<div class="videotrailer" style="width:720px; ">
+				<video src="images/godsmustbecrazy/video/godsmustbecrazy_video.mp4" width="720" height="432"
+					id="container" volume="100" autostart="false" poster="images/godsmustbecrazy/video/poster.png">
+				</video>
 
-	<script type="text/javascript" >
-		jwplayer("container").setup({
-			flashplayer: "Libraries/jwplayer/player.swf"
-		});
-	</script>
-</div>
+				<script type="text/javascript">
+					jwplayer("container").setup({
+						flashplayer: "Libraries/jwplayer/player.swf"
+					});
+				</script>
+			</div>
 
-<h2>Screenshots</h2>
-<div class="screenshots" >
+			<h2>Screenshots</h2>
+			<div class="screenshots">
 
-<a rel="Gal-scbwai" title="Game splash screen" href="images/godsmustbecrazy/Cover.png" ><img border="0" alt="" src="images/godsmustbecrazy/thumbs/Cover_s.png" ></a>
-<a rel="Gal-scbwai" title="Directions - How to play" href="images/godsmustbecrazy/HowToPlay.png" ><img border="0" alt="" src="images/godsmustbecrazy/thumbs/HowToPlay_s.png" ></a>
-<a rel="Gal-scbwai" title="Path trail to help targetting" href="images/godsmustbecrazy/L1_targetting.png" ><img border="0" alt="" src="images/godsmustbecrazy/thumbs/L1_targetting_s.png" ></a>
-<a rel="Gal-scbwai" title="Meteor exploding into the planet" href="images/godsmustbecrazy/L2_explosion2.png" ><img border="0" alt="" src="images/godsmustbecrazy/thumbs/L2_explosion2_s.png" ></a>
-<a rel="Gal-scbwai" title="Another explosion" href="images/godsmustbecrazy/L4_explosion.png" ><img border="0" alt="" src="images/godsmustbecrazy/thumbs/L4_explosion_s.png" ></a>
-<a rel="Gal-scbwai" title="Player loses if population can escape solar system in spaceships" href="images/godsmustbecrazy/LoseScreen.png" ><img border="0" alt="" src="images/godsmustbecrazy/thumbs/LoseScreen_s.png" ></a>
-<a rel="Gal-scbwai" title="No life left in the solar system clears the level" href="images/godsmustbecrazy/WinScreen.png" ><img border="0" alt="" src="images/godsmustbecrazy/thumbs/WinScreen_s.png" ></a>
-<a rel="Gal-scbwai" title="Development team credits" href="images/godsmustbecrazy/Developers.png" ><img border="0" alt="" src="images/godsmustbecrazy/thumbs/Developers_s.png" ></a>
+				<a rel="Gal-scbwai" title="Game splash screen" href="images/godsmustbecrazy/Cover.png"><img border="0"
+						alt="" src="images/godsmustbecrazy/thumbs/Cover_s.png"></a>
+				<a rel="Gal-scbwai" title="Directions - How to play" href="images/godsmustbecrazy/HowToPlay.png"><img
+						border="0" alt="" src="images/godsmustbecrazy/thumbs/HowToPlay_s.png"></a>
+				<a rel="Gal-scbwai" title="Path trail to help targetting"
+					href="images/godsmustbecrazy/L1_targetting.png"><img border="0" alt=""
+						src="images/godsmustbecrazy/thumbs/L1_targetting_s.png"></a>
+				<a rel="Gal-scbwai" title="Meteor exploding into the planet"
+					href="images/godsmustbecrazy/L2_explosion2.png"><img border="0" alt=""
+						src="images/godsmustbecrazy/thumbs/L2_explosion2_s.png"></a>
+				<a rel="Gal-scbwai" title="Another explosion" href="images/godsmustbecrazy/L4_explosion.png"><img
+						border="0" alt="" src="images/godsmustbecrazy/thumbs/L4_explosion_s.png"></a>
+				<a rel="Gal-scbwai" title="Player loses if population can escape solar system in spaceships"
+					href="images/godsmustbecrazy/LoseScreen.png"><img border="0" alt=""
+						src="images/godsmustbecrazy/thumbs/LoseScreen_s.png"></a>
+				<a rel="Gal-scbwai" title="No life left in the solar system clears the level"
+					href="images/godsmustbecrazy/WinScreen.png"><img border="0" alt=""
+						src="images/godsmustbecrazy/thumbs/WinScreen_s.png"></a>
+				<a rel="Gal-scbwai" title="Development team credits" href="images/godsmustbecrazy/Developers.png"><img
+						border="0" alt="" src="images/godsmustbecrazy/thumbs/Developers_s.png"></a>
 
-<script type="text/javascript" >
-		$(document).ready(function() {
+				<script type="text/javascript">
+					$(document).ready(function () {
 
-	$("a[rel=Gal-scbwai]").fancybox({
-				'transitionIn'		: 'elastic',
-				'transitionOut'		: 'fade',
-				'titlePosition' 	: 'over',
-				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-				}
-			});
-			
-		});
-	</script>
+						$("a[rel=Gal-scbwai]").fancybox({
+							'transitionIn': 'elastic',
+							'transitionOut': 'fade',
+							'titlePosition': 'over',
+							'titleFormat': function (title, currentArray, currentIndex, currentOpts) {
+								return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+							}
+						});
 
-</div>
+					});
+				</script>
 
-<h2>Code Sample</h2>
-<p style="margin-right:30px; margin-left:30px; " >The Draw method in the game's root class merely delegates all entities in its component list as shown in the snippet below:</p>
-<div class="codeblock" >
-<pre class="brush: csharp;" >protected override void Draw(GameTime gameTime)
+			</div>
+
+			<h2>Code Sample</h2>
+			<p style="margin-right:30px; margin-left:30px; ">The Draw method in the game's root class merely delegates
+				all entities in its component list as shown in the snippet below:</p>
+			<div class="codeblock">
+				<pre class="brush: csharp;">protected override void Draw(GameTime gameTime)
 {
     GraphicsDevice.Clear(Color.Black);
 
@@ -178,23 +215,32 @@
 
     base.Draw(gameTime);
 }
-</pre></div>
+</pre>
+			</div>
 
-<h2>Download</h2>
-	<div class="downloads" >
-		<p>Click <a href="downloads/godsmustbecrazy/godsmustbecrazy_install.rar" class="red" >here</a> to dowload the latest version of the game</p>
-		<p><strong>Installation Instructions:</strong></p>
-		<ul>
-			<li>Extract the downloaded file, and run <em>setup.exe</em></li>
-		</ul>
+			<h2>Download</h2>
+			<div class="downloads">
+				<p>Click <a href="downloads/godsmustbecrazy/godsmustbecrazy_install.rar" class="red">here</a> to dowload
+					the latest version of the game</p>
+				<p><strong>Installation Instructions:</strong></p>
+				<ul>
+					<li>Extract the downloaded file, and run <em>setup.exe</em></li>
+				</ul>
+			</div>
+
+			<div class="emptygap">&nbsp;</div>
+
+		</div>
+
+		<div class="port-footer" style="left:0; top:-47px; ">Prakash Prasad © 2011 <strong><big>&middot;</big></strong>
+			Copenhagen, Denmark <strong><big>&middot;</big></strong> Contact
+			<script
+				type="text/javascript">document.write('<a href="mailto:' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + '@' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + 'p' + 'r' + 'a' + 's' + 'a' + 'd' + '.' + 'c' + 'o' + 'm' + '" class="light" >' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + '@' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + 'p' + 'r' + 'a' + 's' + 'a' + 'd' + '.' + 'c' + 'o' + 'm' + '</a>');</script>
+			for more details.
+		</div>
+
 	</div>
 
-<div class="emptygap" >&nbsp;</div>
+</body>
 
-</div>
-
-<div class="port-footer" style="left:0; top:-47px; " >Prakash Prasad © 2011 <strong><big>&middot;</big></strong> Copenhagen, Denmark <strong><big>&middot;</big></strong> Contact <script type="text/javascript" >document.write('<a href="mailto:'+'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + '@' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + 'p' + 'r' + 'a' + 's' + 'a' + 'd' + '.' + 'c' + 'o' + 'm'+'" class="light" >'+'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + '@' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + 'p' + 'r' + 'a' + 's' + 'a' + 'd' + '.' + 'c' + 'o' + 'm'+'</a>');</script> for more details.</div>
-
-</div>
-
-</body></html>
+</html>

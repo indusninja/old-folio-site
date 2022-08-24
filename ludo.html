@@ -1,80 +1,107 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-	<meta name="author" content="Prakash Prasad" >		
-	<script type="text/javascript" >
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
+<html>
 
-	    var _gaq = _gaq || [];
-	    _gaq.push(['_setAccount', 'UA-27962903-1']);
-	    _gaq.push(['_setDomainName', 'prakashprasad.com']);
-	    _gaq.push(['_trackPageview']);
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Prakash Prasad">
+	<script type="text/javascript">
 
-	    (function () {
-	        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	    })();
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-27962903-1']);
+		_gaq.push(['_setDomainName', 'prakashprasad.com']);
+		_gaq.push(['_trackPageview']);
 
-    </script>
-	<link rel="Shortcut Icon" href="http://prakashprasad.com/images/favicon.ico" type="image/x-icon" > 
-     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400|Open+Sans+Condensed:300,300italic&subset=latin,greek,greek-ext,latin-ext" rel="stylesheet" type="text/css" >
-	<link href="main.css" rel="stylesheet" type="text/css" >
-	<link rel="stylesheet" type="text/css" href="menu_style.css" >
-	<link rel="stylesheet" href="Libraries/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" >
-    <link type="text/css" rel="stylesheet" href="Libraries/syntaxhighlighter/styles/shCoreEclipse.css" >
-	
+		(function () {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+	<link rel="Shortcut Icon" href="https://prakashprasad.com/images/favicon.ico" type="image/x-icon">
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Open+Sans+Condensed:300,300italic&subset=latin,greek,greek-ext,latin-ext"
+		rel="stylesheet" type="text/css">
+	<link href="main.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="menu_style.css">
+	<link rel="stylesheet" href="Libraries/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen">
+	<link type="text/css" rel="stylesheet" href="Libraries/syntaxhighlighter/styles/shCoreEclipse.css">
+
 	<title>Ludo AI Controller (Java) - prakashprasad.com</title>
-	
-	<script type="text/javascript" src="Libraries/jquery-1.4.3.min.js" ></script>
-	<script src="Libraries/fancybox/jquery.fancybox-1.3.4.js" type="text/javascript" ></script>
-	<script type="text/javascript" src="Libraries/jwplayer/jwplayer.js" ></script>
-    <script type="text/javascript" src="Libraries/syntaxhighlighter/scripts/shCore.js" ></script>
-    <script type="text/javascript" src="Libraries/syntaxhighlighter/scripts/shBrushJava.js" ></script>
-	<script type="text/javascript" >	    SyntaxHighlighter.all();</script>
+
+	<script type="text/javascript" src="Libraries/jquery-1.4.3.min.js"></script>
+	<script src="Libraries/fancybox/jquery.fancybox-1.3.4.js" type="text/javascript"></script>
+	<script type="text/javascript" src="Libraries/jwplayer/jwplayer.js"></script>
+	<script type="text/javascript" src="Libraries/syntaxhighlighter/scripts/shCore.js"></script>
+	<script type="text/javascript" src="Libraries/syntaxhighlighter/scripts/shBrushJava.js"></script>
+	<script type="text/javascript">	    SyntaxHighlighter.all();</script>
 </head>
-	<body class="port-body" >
 
-<a href="http://www.prakashprasad.com/blog" target="_blank" ><div class="port-blog" style="left:55px; top:-5px; " ></div></a>
+<body class="port-body">
 
-<a href="http://photo.prakashprasad.com" target="_blank" ><div class="port-photo" style="left:115px; top:-5px; " ></div></a>
+	<a href="https://www.prakashprasad.com/blog" target="_blank">
+		<div class="port-blog" style="left:55px; top:-5px; "></div>
+	</a>
 
-<div class="port-wrap" >
-<div class="port-header" onclick="location.href='index.html';" style="cursor:pointer; " ></div>
+	<a href="https://photo.prakashprasad.com" target="_blank">
+		<div class="port-photo" style="left:115px; top:-5px; "></div>
+	</a>
 
-<div class="nav-bar-container" >
-<ul id="navigation-1" >
-		<li><a href="index.html" title="Home" >Home</a></li>
-		<li><a href="resume.html" title="Résumé" >Résumé</a></li>
-		<li><a href="projects.html" title="Projects" class="navigation-sel" >Projects</a>
-			<ul class="navigation-2" >
-				<li><a href="projects_as.html" title="Actionscript Projects" >Actionscript</a></li>
-				<li><a href="projects_cpp.html" title="C++ Projects" >C++</a></li>
-				<li><a href="projects_cs.html" title="C# Projects" >C#</a></li>
-				<li><a href="projects_java.html" title="Java Projects" class="navigation-sel" >Java</a></li>
-				<li><a href="projects_u3d.html" title="Unity 3D Projects" >Unity 3D</a></li>
-				<li><a href="projects_u.html" title="Unrealscript Projects" >Unrealscript</a></li>
+	<div class="port-wrap">
+		<div class="port-header" onclick="location.href='index.html';" style="cursor:pointer; "></div>
+
+		<div class="nav-bar-container">
+			<ul id="navigation-1">
+				<li><a href="index.html" title="Home">Home</a></li>
+				<li><a href="resume.html" title="Résumé">Résumé</a></li>
+				<li><a href="projects.html" title="Projects" class="navigation-sel">Projects</a>
+					<ul class="navigation-2">
+						<li><a href="projects_as.html" title="Actionscript Projects">Actionscript</a></li>
+						<li><a href="projects_cpp.html" title="C++ Projects">C++</a></li>
+						<li><a href="projects_cs.html" title="C# Projects">C#</a></li>
+						<li><a href="projects_java.html" title="Java Projects" class="navigation-sel">Java</a></li>
+						<li><a href="projects_u3d.html" title="Unity 3D Projects">Unity 3D</a></li>
+						<li><a href="projects_u.html" title="Unrealscript Projects">Unrealscript</a></li>
+					</ul>
+				</li>
+				<li><a href="contact.html" title="Contact">Contact</a></li>
 			</ul>
-		</li>
-		<li><a href="contact.html" title="Contact" >Contact</a></li>
-</ul>
-</div>
+		</div>
 
-<div class="port-block" style="left:0; top:-36px; " >
+		<div class="port-block" style="left:0; top:-36px; ">
 
-<h1>Ludo AI Controller</h1>
+			<h1>Ludo AI Controller</h1>
 
-<h2>Game Description</h2>
-<div class="gamedescription" >
-<p>Ludo is a board game that allows up to 4 players which originates from the Indian game Pachisi. Ludo provides an interesting problem from an AI perspective in that while its mostly a min-maxing technique to move one’s pieces in the most optimal manner, the other players’ involvement may sometimes not give ideal results. Then the key question would be - are there techniques better suited than a simple min-max approach? Can a random approach do equally good? Such questions were analyzed during this research oriented project where some modern AI techniques were tested for their success rate at playing the game.</p>
-<p>The project involved using a digital version of Ludo game as the testbed. The testbed was provided through the “Modern AI in games” class at IT University of Copenhagen, Denmark and it’s LUDOPlayer class can be overloaded to create a custom player. In this case, 3 kinds of players were devised:</p>
-<ul>
-	<li><strong>Trained neural network player</strong> - This player would find the action with the highest desirability value and carry it out. The neural network was pre-trained with certain datasets obtained from how a min-maxing strategy player would play it.</li>
-	<li><strong>Player trained through Temporal Difference</strong> - Again, a neural network would analyze the desirability of any move possible and carry out the one it would think best. However each move’s success/failure would be used to train the network. For example - if the move meant that the player’s piece got to home, then program tells the network to give that kind of output. However, if it lead to the piece being intercepted by another player, then network should not give that result.</li>
-	<li><strong>Player evolved via Genetic Algorithm</strong> - The game’s controlling neural network is put through a genetic algorithm to find the configuration with the best average result history.</li>
-</ul>
-</div>
+			<h2>Game Description</h2>
+			<div class="gamedescription">
+				<p>Ludo is a board game that allows up to 4 players which originates from the Indian game Pachisi. Ludo
+					provides an interesting problem from an AI perspective in that while its mostly a min-maxing
+					technique to move one’s pieces in the most optimal manner, the other players’ involvement may
+					sometimes not give ideal results. Then the key question would be - are there techniques better
+					suited than a simple min-max approach? Can a random approach do equally good? Such questions were
+					analyzed during this research oriented project where some modern AI techniques were tested for their
+					success rate at playing the game.</p>
+				<p>The project involved using a digital version of Ludo game as the testbed. The testbed was provided
+					through the “Modern AI in games” class at IT University of Copenhagen, Denmark and it’s LUDOPlayer
+					class can be overloaded to create a custom player. In this case, 3 kinds of players were devised:
+				</p>
+				<ul>
+					<li><strong>Trained neural network player</strong> - This player would find the action with the
+						highest desirability value and carry it out. The neural network was pre-trained with certain
+						datasets obtained from how a min-maxing strategy player would play it.</li>
+					<li><strong>Player trained through Temporal Difference</strong> - Again, a neural network would
+						analyze the desirability of any move possible and carry out the one it would think best. However
+						each move’s success/failure would be used to train the network. For example - if the move meant
+						that the player’s piece got to home, then program tells the network to give that kind of output.
+						However, if it lead to the piece being intercepted by another player, then network should not
+						give that result.</li>
+					<li><strong>Player evolved via Genetic Algorithm</strong> - The game’s controlling neural network is
+						put through a genetic algorithm to find the configuration with the best average result history.
+					</li>
+				</ul>
+			</div>
 
-<!--<h2>Programming Challenges</h2>
+			<!--<h2>Programming Challenges</h2>
 <div class="programmingchallenge" >
 <p>Coming Soon...</p>
 </div>
@@ -84,22 +111,26 @@
 <p>Coming Soon...</p>
 </div>-->
 
-<h2>Video</h2>
-<div class="videotrailer" style="width:720px; " >
-	<video src="images/ludo/video/ludo_video.mp4" width="720" height="546" id="container" volume="100" autostart="false" poster="images/ludo/video/poster.png" >
-	</video>
+			<h2>Video</h2>
+			<div class="videotrailer" style="width:720px; ">
+				<video src="images/ludo/video/ludo_video.mp4" width="720" height="546" id="container" volume="100"
+					autostart="false" poster="images/ludo/video/poster.png">
+				</video>
 
-	<script type="text/javascript" >
-		jwplayer("container").setup({
-			flashplayer: "Libraries/jwplayer/player.swf"
-		});
-	</script>
-</div>
+				<script type="text/javascript">
+					jwplayer("container").setup({
+						flashplayer: "Libraries/jwplayer/player.swf"
+					});
+				</script>
+			</div>
 
-<h2>Code Sample</h2>
-<p style="margin-right:30px; margin-left:30px; " >Overloaded play() method in each player class takes care of the order of play actions. The play method for the Temporal Difference player is shown here. The method applies a greedy methodology which means that even though on most occasions it will make the optimal move, some times a random move will be used to avoid the method being stuck in a local minima.</p>
-<div class="codeblock" >
-<pre class="brush: java;" >public void play() {
+			<h2>Code Sample</h2>
+			<p style="margin-right:30px; margin-left:30px; ">Overloaded play() method in each player class takes care of
+				the order of play actions. The play method for the Temporal Difference player is shown here. The method
+				applies a greedy methodology which means that even though on most occasions it will make the optimal
+				move, some times a random move will be used to avoid the method being stuck in a local minima.</p>
+			<div class="codeblock">
+				<pre class="brush: java;">public void play() {
 	turn++;
 
 	board.rollDice();
@@ -141,14 +172,22 @@
 	previousBrickPositions = board.getMyBricks();
 	}
 }
-</pre></div>
+</pre>
+			</div>
 
-<div class="emptygap" >&nbsp;</div>
+			<div class="emptygap">&nbsp;</div>
 
-</div>
+		</div>
 
-<div class="port-footer" style="left:0; top:-47px; " >Prakash Prasad © 2011 <strong><big>&middot;</big></strong> Copenhagen, Denmark <strong><big>&middot;</big></strong> Contact <script type="text/javascript" >document.write('<a href="mailto:'+'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + '@' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + 'p' + 'r' + 'a' + 's' + 'a' + 'd' + '.' + 'c' + 'o' + 'm'+'" class="light" >'+'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + '@' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + 'p' + 'r' + 'a' + 's' + 'a' + 'd' + '.' + 'c' + 'o' + 'm'+'</a>');</script> for more details.</div>
+		<div class="port-footer" style="left:0; top:-47px; ">Prakash Prasad © 2011 <strong><big>&middot;</big></strong>
+			Copenhagen, Denmark <strong><big>&middot;</big></strong> Contact
+			<script
+				type="text/javascript">document.write('<a href="mailto:' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + '@' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + 'p' + 'r' + 'a' + 's' + 'a' + 'd' + '.' + 'c' + 'o' + 'm' + '" class="light" >' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + '@' + 'p' + 'r' + 'a' + 'k' + 'a' + 's' + 'h' + 'p' + 'r' + 'a' + 's' + 'a' + 'd' + '.' + 'c' + 'o' + 'm' + '</a>');</script>
+			for more details.
+		</div>
 
-</div>
+	</div>
 
-</body></html>
+</body>
+
+</html>

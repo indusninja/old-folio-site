@@ -1,9 +1,9 @@
 /**
  * SyntaxHighlighter
- * http://alexgorbatchev.com/SyntaxHighlighter
+ * https://alexgorbatchev.com/SyntaxHighlighter
  *
  * SyntaxHighlighter is donationware. If you are using it, please donate.
- * http://alexgorbatchev.com/SyntaxHighlighter/donate.html
+ * https://alexgorbatchev.com/SyntaxHighlighter/donate.html
  *
  * @version
  * 3.0.83 (July 02 2010)
@@ -22,7 +22,7 @@
 	function Brush()
 	{
 		// Contributed by Andres Almiray
-		// http://jroller.com/aalmiray/entry/nice_source_code_syntax_highlighter
+		// https://jroller.com/aalmiray/entry/nice_source_code_syntax_highlighter
 
 		var keywords =	'as assert break case catch class continue def default do else extends finally ' +
 						'if in implements import instanceof interface new package property return switch ' +

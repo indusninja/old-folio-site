@@ -1,9 +1,9 @@
 /**
  * SyntaxHighlighter
- * http://alexgorbatchev.com/SyntaxHighlighter
+ * https://alexgorbatchev.com/SyntaxHighlighter
  *
  * SyntaxHighlighter is donationware. If you are using it, please donate.
- * http://alexgorbatchev.com/SyntaxHighlighter/donate.html
+ * https://alexgorbatchev.com/SyntaxHighlighter/donate.html
  *
  * @version
  * 3.0.83 (July 02 2010)
@@ -22,7 +22,7 @@
 	function Brush()
 	{
 		// Contributed by Jen
-		// http://www.jensbits.com/2009/05/14/coldfusion-brush-for-syntaxhighlighter-plus
+		// https://www.jensbits.com/2009/05/14/coldfusion-brush-for-syntaxhighlighter-plus
 	
 		var funcs	=	'Abs ACos AddSOAPRequestHeader AddSOAPResponseHeader AjaxLink AjaxOnLoad ArrayAppend ArrayAvg ArrayClear ArrayDeleteAt ' + 
 						'ArrayInsertAt ArrayIsDefined ArrayIsEmpty ArrayLen ArrayMax ArrayMin ArraySet ArraySort ArraySum ArraySwap ArrayToList ' + 

@@ -1,9 +1,9 @@
 /**
  * SyntaxHighlighter
- * http://alexgorbatchev.com/SyntaxHighlighter
+ * https://alexgorbatchev.com/SyntaxHighlighter
  *
  * SyntaxHighlighter is donationware. If you are using it, please donate.
- * http://alexgorbatchev.com/SyntaxHighlighter/donate.html
+ * https://alexgorbatchev.com/SyntaxHighlighter/donate.html
  *
  * @version
  * 3.0.83 (July 02 2010)
@@ -22,7 +22,7 @@
 	function Brush()
 	{
 		// Contributes by B.v.Zanten, Getronics
-		// http://confluence.atlassian.com/display/CONFEXT/New+Code+Macro
+		// https://confluence.atlassian.com/display/CONFEXT/New+Code+Macro
 
 		var keywords = 'Add-Content Add-History Add-Member Add-PSSnapin Clear(-Content)? Clear-Item ' +
 					'Clear-ItemProperty Clear-Variable Compare-Object ConvertFrom-SecureString Convert-Path ' +
